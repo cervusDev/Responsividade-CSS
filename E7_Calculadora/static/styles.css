@@ -51,21 +51,6 @@ img {
     font-size: 3em;
 }
 
-@media(max-width: 775px) {
-    html {
-        font-size: 80%;
-    }
-}
-
-@media(max-width: 770px) {
-    html {
-        font-size: 60%;
-    }
-
-    .banner {
-        margin-left: -2em;
-    }
-}
 .flex {
     display: flex;
     justify-content:space-evenly;
@@ -96,9 +81,13 @@ img {
     transform: scale(1.1);
 }
 
+.seletor {
+    border:4px solid  chartreuse
+}
+
 .wrapper-ahri {
     
-    width: 17.5vw;
+    width: 16.9vw;
     height: 21.5vh;
 
     background: url(_images/ahri.jpg);
@@ -108,7 +97,7 @@ img {
 }
 
 .ahri-name {
-    width:17.5vw ;
+    width:16.9vw ;
     height: 2.5rem;
     
     text-align: center;
@@ -586,4 +575,20 @@ img {
     font-style: italic;
     font-size: 2rem;
 
+}
+
+@media(max-width: 775px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media(max-width: 770px) {
+    html {
+        font-size: 60%;
+    }
+
+    .banner {
+        margin-left: -2em;
+    }
 }
