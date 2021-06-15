@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 62.25%;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    /* evita a barra de rolagem */
+    overflow: hidden;
+    /* permite que elemenetos sejam postos sobre o bg */
+    /* também é usado para utilizar as propriedades top, bottom, left,rigth */
+    position: relative;
+
+    background: url(_images/bg.jpg), no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: .9;
+}
+
+.banner {
+    /* só funciona dentro de um objeto com position relative */
+    position: absolute;
+
+    color: whitesmoke;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-size: 2em;
+    text-transform: uppercase;
+
+}
+
+.banner p {
+    position: relative;
+    /* margin-left: -26%; */
+    padding: .1em   ;
+
+    font-family: 'Vollkorn+SC';
+    color: whitesmoke;
+    text-shadow: black 1em 1em 1em ;
+    font-size: 3em;
+}
+
+.charachters {
+    position:absolute;
+    width: 20em;
+    height: 20em;
+
+}
+
+@media(max-width: 775px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media(max-width: 770px) {
+    html {
+        font-size: 60%;
+    }
+
+    .banner {
+        margin-left: -2em;
+    }
+}
+

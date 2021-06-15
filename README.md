@@ -19,3 +19,10 @@
     Textos Fluidos
         em: multiplicado pelo pai 
         rem: multiplicado pelo root (body)
+
+## Responsividade do Background
+
+    O background deve obedecer o comportamento de seu elemento pai, não devendo ser o próprio BG a referência
+    de elemento pai e sim ser referênciado
+
+    ex: um header que contem um wrapper - background que contém a tag img,para cada um destes elementos deve ser setado um tamanho de visualização de tela
