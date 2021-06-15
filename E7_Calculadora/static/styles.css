@@ -5,20 +5,24 @@
 }
 body {
     font-size: 62.25%;
-}
-.container {
-    width: 100%;
-    height: 100vh;
-    /* evita a barra de rolagem */
-    overflow: hidden;
-    /* permite que elemenetos sejam postos sobre o bg */
-    /* também é usado para utilizar as propriedades top, bottom, left,rigth */
-    position: relative;
 
     background: url(_images/bg.jpg), no-repeat;
     background-size: cover;
     background-attachment: fixed;
     opacity: .9;
+}
+
+img {
+    max-width: 100%;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    /* evita a barra de rolagem */
+    /* overflow: hidden; */
+    /* permite que elemenetos sejam postos sobre o bg */
+    /* também é usado para utilizar as propriedades top, bottom, left,rigth */
+    position: relative;
 }
 
 .banner {
@@ -62,6 +66,12 @@ body {
         margin-left: -2em;
     }
 }
+.flex {
+    display: flex;
+    justify-content:space-evenly;
+
+    padding: 4rem;
+}
 
 .character-one {
     width: 17.5vw;
@@ -70,12 +80,20 @@ body {
     background: rgba(0, 0, 0, .5);
     border-radius: .5rem;
 
-    position: absolute;
     align-items: center;
 
     position: relative;
-    left: 10%;
     margin-top: 15%;
+
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5;
+}
+
+.character-one:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .wrapper-ahri {
@@ -118,26 +136,43 @@ body {
     font-size: 1.3em;
     color: whitesmoke;
 
+    opacity: 0;
+    transition: all 1s ;
+
+}
+
+.card-info-ahri:hover{
+    opacity: 1;
 }
 
 .card-info-ahri p {
 
     padding: 2em;
+    text-shadow: 2px 2px 2px black;
+    font-weight: 500;
 }
 
 .character-two {
     width: 17.5vw;
     height: 47.5vh;
 
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .7);
     border-radius: .5rem;
 
-    position: absolute;
     align-items: center;
 
     position: relative;
-    /* left: 10%; */
-    /* margin-top: 15%; */
+    margin-top: 15%;
+    
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5;
+}
+
+.character-two:hover {
+-moz-transform: scale(1.1);
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
 }
 
 .wrapper-braum {
@@ -180,10 +215,375 @@ body {
     font-size: 1.3em;
     color: whitesmoke;
 
+    opacity: 0;
+    transition: all 1s;
+}
+
+.card-info-braum:hover {
+    opacity: 1;
 }
 
 .card-info-braum p {
 
     padding: 2em;
+    text-shadow: 2px 2px 2px black;
+    font-weight: 500;
 }
 
+.character-three {
+    width: 17.5vw;
+    height: 47.5vh;
+
+    background: rgba(0, 0, 0, .5);
+    border-radius: .5rem;
+
+    align-items: center;
+
+    position: relative;
+    margin-top: 15%;
+    
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5;
+}
+
+
+
+.character-three:hover {
+-moz-transform: scale(1.1);
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+}
+
+.wrapper-aurelion {
+    
+    width: 17.5vw;
+    height: 21.5vh;
+
+    background: url(_images/Aurelion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .2rem;
+}
+
+.aurelion-name {
+    width:17.5vw ;
+    height: 2.5rem;
+    
+    text-align: center;
+    color: whitesmoke;
+
+    text-transform: capitalize;
+    background-color: rgba(0, 0, 0, .7);
+
+    position: relative;
+    
+}
+
+.aurelion-name p {
+
+    font-family: 'Vollkorn+SC';
+    font-style: italic;
+    font-size: 2em;
+
+    padding: .5em;
+}
+
+.card-info-aurelion {
+
+    font-family: 'Roboto';
+    font-size: 1.3em;
+    color: whitesmoke;
+
+    opacity: 0;
+    transition: all 1s;
+}
+
+.card-info-aurelion:hover {
+    opacity: 1;
+}
+
+.card-info-aurelion p {
+
+    padding: 1.2em;
+    text-shadow: 2px 2px 2px black;
+    font-weight: 500;
+}
+
+.character-four  {
+    width: 17.5vw;
+    height: 47.5vh;
+
+    background: rgba(0, 0, 0, .5);
+    border-radius: .5rem;
+
+    align-items: center;
+
+    position: relative;
+    
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5;
+}
+
+.character-four:hover {
+-moz-transform: scale(1.1);
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+}
+
+.wrapper-fizz {
+    
+    width: 17.5vw;
+    height: 21.5vh;
+
+    background: url(_images/Fizz.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .2rem;
+}
+
+.fizz-name {
+    width:17.5vw ;
+    height: 2.5rem;
+    
+    text-align: center;
+    color: whitesmoke;
+
+    text-transform: capitalize;
+    background-color: rgba(0, 0, 0, .7);
+
+    position: relative;
+    
+}
+
+.fizz-name p {
+
+    font-family: 'Vollkorn+SC';
+    font-style: italic;
+    font-size: 2em;
+
+    padding: .5em;
+}
+
+.card-info-fizz {
+
+    font-family: 'Roboto';
+    font-size: 1.3em;
+    color: whitesmoke;
+
+    opacity: 0;
+    transition: all 1s;
+
+}
+
+.card-info-fizz:hover {
+    opacity: 1;
+}
+
+.card-info-fizz p {
+
+    padding: 2em;
+    text-shadow: 2px 2px 2px black;
+    font-weight: 500;
+}
+
+.character-five  {
+    width: 17.5vw;
+    height: 47.5vh;
+
+    background: rgba(0, 0, 0, .5);
+    border-radius: .5rem;
+
+    align-items: center;
+
+    position: relative;
+    
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5;
+}
+
+.character-five:hover {
+-moz-transform: scale(1.1);
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+}
+
+.wrapper-heim {
+    
+    width: 17.5vw;
+    height: 21.5vh;
+
+    background: url(_images/Heimerdinger.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .2rem;
+}
+
+.heim-name {
+    width:17.5vw ;
+    height: 2.5rem;
+    
+    text-align: center;
+    color: whitesmoke;
+
+    text-transform: capitalize;
+    background-color: rgba(0, 0, 0, .7);
+
+    position: relative;
+    
+}
+
+.heim-name p {
+
+    font-family: 'Vollkorn+SC';
+    font-style: italic;
+    font-size: 2em;
+
+    padding: .5em;
+}
+
+.card-info-heim {
+
+    font-family: 'Roboto';
+    font-size: 1.3em;
+    color: whitesmoke;
+
+    opacity: 0;
+    transition: all 1s;
+
+}
+
+.card-info-heim:hover {
+    opacity: 1;
+}
+
+.card-info-heim p {
+
+    padding: 1.7em;
+    text-shadow: 2px 2px 2px black;
+    font-weight: 500;
+}
+
+.character-six  {
+    width: 17.5vw;
+    height: 47.5vh;
+
+    background: rgba(0, 0, 0, .5);
+    border-radius: .5rem;
+
+    align-items: center;
+
+    position: relative;
+   
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5;
+}
+
+.character-six:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.wrapper-anivia {
+    
+    width: 17.5vw;
+    height: 21.5vh;
+
+    background: url(_images/anivia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .2rem;
+}
+
+.anivia-name {
+    width:17.5vw ;
+    height: 2.5rem;
+    
+    text-align: center;
+    color: whitesmoke;
+
+    text-transform: capitalize;
+    background-color: rgba(0, 0, 0, .7);
+
+    position: relative;
+    
+}
+
+.anivia-name p {
+
+    font-family: 'Vollkorn+SC';
+    font-style: italic;
+    font-size: 2em;
+
+    padding: .5em;
+}
+
+.card-info-anivia {
+
+    font-family: 'Roboto';
+    font-size: 1.3em;
+    color: whitesmoke;
+
+    opacity: 0;
+    transition: all 1s;
+
+}
+
+.card-info-anivia:hover {
+    opacity: 1;
+}
+
+.card-info-anivia p {
+
+    padding: 1.2em;
+    text-shadow: 2px 2px 2px black;
+    font-weight: 500;
+}
+
+.button-props {
+    padding: 4em;
+}
+
+.wrapper-object {
+    width: 17.5vw;
+    height: 5rem;
+
+    text-align: center;
+    position: relative;
+    left: 41%;
+
+    background: rgba(0, 0, 0, .9);
+    border-radius: .5rem;
+    border-radius: 1rem;
+
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5;
+}
+
+.wrapper-object:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.wrapper-object button {
+    width: 17.5vw;
+    height: 5rem;
+
+    background: rgba(0, 0, 0, .7);
+    border: none;
+    border-radius: 1rem;
+}
+
+.wrapper-object button p {
+    color: whitesmoke;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-size: 2rem;
+
+}
