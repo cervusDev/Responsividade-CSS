@@ -16,6 +16,6 @@
         1px = 0.75pt
         16px = 12pt
     
-    Textos Flueidos
+    Textos Fluidos
         em: multiplicado pelo pai 
         rem: multiplicado pelo root (body)
