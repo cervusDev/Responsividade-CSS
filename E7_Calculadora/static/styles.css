@@ -24,6 +24,8 @@ body {
 .banner {
     /* só funciona dentro de um objeto com position relative */
     position: absolute;
+    top: 5%;
+    left: 45%;
 
     color: whitesmoke;
     font-family: 'Roboto';
@@ -34,21 +36,15 @@ body {
 }
 
 .banner p {
-    position: relative;
-    /* margin-left: -26%; */
-    padding: .1em   ;
 
+    position: relative;
+    padding: .1em   ;
+    right: 25%;
+    
     font-family: 'Vollkorn+SC';
     color: whitesmoke;
-    text-shadow: black 1em 1em 1em ;
+
     font-size: 3em;
-}
-
-.charachters {
-    position:absolute;
-    width: 20em;
-    height: 20em;
-
 }
 
 @media(max-width: 775px) {
@@ -65,5 +61,129 @@ body {
     .banner {
         margin-left: -2em;
     }
+}
+
+.character-one {
+    width: 17.5vw;
+    height: 47.5vh;
+
+    background: rgba(0, 0, 0, .5);
+    border-radius: .5rem;
+
+    position: absolute;
+    align-items: center;
+
+    position: relative;
+    left: 10%;
+    margin-top: 15%;
+}
+
+.wrapper-ahri {
+    
+    width: 17.5vw;
+    height: 21.5vh;
+
+    background: url(_images/ahri.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .2rem;
+}
+
+.ahri-name {
+    width:17.5vw ;
+    height: 2.5rem;
+    
+    text-align: center;
+    color: whitesmoke;
+
+    text-transform: capitalize;
+    background-color: rgba(0, 0, 0, .7);
+
+    position: relative;
+    
+}
+
+.ahri-name p {
+
+    font-family: 'Vollkorn+SC';
+    font-style: italic;
+    font-size: 2em;
+
+    padding: .5em;
+}
+
+.card-info-ahri {
+
+    font-family: 'Roboto';
+    font-size: 1.3em;
+    color: whitesmoke;
+
+}
+
+.card-info-ahri p {
+
+    padding: 2em;
+}
+
+.character-two {
+    width: 17.5vw;
+    height: 47.5vh;
+
+    background: rgba(0, 0, 0, .5);
+    border-radius: .5rem;
+
+    position: absolute;
+    align-items: center;
+
+    position: relative;
+    /* left: 10%; */
+    /* margin-top: 15%; */
+}
+
+.wrapper-braum {
+    
+    width: 17.5vw;
+    height: 21.5vh;
+
+    background: url(_images/braum.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .2rem;
+}
+
+.braum-name {
+    width:17.5vw ;
+    height: 2.5rem;
+    
+    text-align: center;
+    color: whitesmoke;
+
+    text-transform: capitalize;
+    background-color: rgba(0, 0, 0, .7);
+
+    position: relative;
+    
+}
+
+.braum-name p {
+
+    font-family: 'Vollkorn+SC';
+    font-style: italic;
+    font-size: 2em;
+
+    padding: .5em;
+}
+
+.card-info-braum {
+
+    font-family: 'Roboto';
+    font-size: 1.3em;
+    color: whitesmoke;
+
+}
+
+.card-info-braum p {
+
+    padding: 2em;
 }
 
