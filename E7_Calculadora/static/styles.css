@@ -59,7 +59,7 @@ img {
 }
 
 .character-one {
-    width: 17.5vw;
+    width: 17vw;
     height: 47.5vh;
 
     background: rgba(0, 0, 0, .5);
@@ -81,9 +81,9 @@ img {
     transform: scale(1.1);
 }
 
-.seletor {
+/* .seletor {
     border:4px solid  chartreuse
-}
+} */
 
 .wrapper-ahri {
     
