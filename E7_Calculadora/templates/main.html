@@ -7,9 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="../static/fonts.css">
-    <link rel="stylesheet" href="../static/styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/fonts.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <script type="text/javascript" src="../static/js/main.js" defer></script>
+    
+    <title>Calculadora de Dano</title>
 
 </head>
 
@@ -21,7 +23,7 @@
                 <p>campeão</p>
             </div>
             <section class="flex">
-                <div class="character-one seletor characters">
+                <div class="character-one hover-selected selector" data-name="ahri">
                     <div class="wrapper-ahri">
                         <!-- imagem no css  -->
                     </div>
@@ -36,7 +38,7 @@
                     </div>
                 </div>
 
-                <div class="character-two characters">
+                <div class="character-two hover-selected selector" data-name="braum">
                     <div class="wrapper-braum">
                         <!-- imagem no css  -->
                     </div>
@@ -51,7 +53,7 @@
                     </div>
                 </div>
 
-                <div class="character-three characters">
+                <div class="character-three hover-selected selector" data-name="Aurelion Sol">
                     <div class="wrapper-aurelion">
                         <!-- imagem no css  -->
                     </div>
@@ -69,7 +71,7 @@
             
             <section class="flex">
 
-                <div class="character-four characters">
+                <div class="character-four hover-selected selector" data-name="Fizz">
                     <div class="wrapper-fizz">
                         <!-- imagem no css  -->
                     </div>
@@ -83,7 +85,7 @@
                     </div>
                 </div>
 
-                <div class="character-five characters">
+                <div class="character-five hover-selected selector" data-name="Heim">
                     <div class="wrapper-heim">
                         <!-- imagem no css  -->
                     </div>
@@ -97,7 +99,7 @@
                     </div>
                 </div>
 
-                <div class="character-six characters">
+                <div class="character-six hover-selected selector" data-name="Anivia">
                     <div class="wrapper-anivia">
                         <!-- imagem no css  -->
                     </div>
@@ -114,15 +116,13 @@
             </section> 
 
             <section class="button-props">
-                <div class="wrapper-object">
+                <div class="wrapper-object hover-selected selector">
                     <button id = 'atacar' type="submit">
                          <p>atacar</p>
                     </button>
                 </div> 
             </section>
         </div>
-
-        <script type="text/javascript" src="../js/main.js"></script>
     </body>
 
 </html>

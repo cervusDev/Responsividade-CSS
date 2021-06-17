@@ -6,7 +6,7 @@
 body {
     font-size: 62.25%;
 
-    background: url(_images/bg.jpg), no-repeat;
+    background: url(../images/bg.jpg), no-repeat;
     background-size: cover;
     background-attachment: fixed;
     opacity: .9;
@@ -15,6 +15,13 @@ body {
 img {
     max-width: 100%;
 }
+
+.selector {
+    -moz-transform: scale(1.13);
+    -webkit-transform: scale(1.13);
+    transform: scale(1.13);
+}
+
 .container {
     width: 100%;
     height: 100vh;
@@ -75,22 +82,12 @@ img {
     transition: all .5;
 }
 
-.character-one:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-/* .seletor {
-    border:4px solid  chartreuse
-} */
-
 .wrapper-ahri {
     
     width: 16.9vw;
     height: 21.5vh;
 
-    background: url(_images/ahri.jpg);
+    background: url(../images/ahri.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: .2rem;
@@ -158,18 +155,12 @@ img {
     transition: all .5;
 }
 
-.character-two:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
 .wrapper-braum {
     
     width: 17.5vw;
     height: 21.5vh;
 
-    background: url(_images/braum.jpg);
+    background: url(../images/braum.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: .2rem;
@@ -236,20 +227,12 @@ img {
     transition: all .5;
 }
 
-
-
-.character-three:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
 .wrapper-aurelion {
     
     width: 17.5vw;
     height: 21.5vh;
 
-    background: url(_images/Aurelion.jpg);
+    background: url(../images/Aurelion.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: .2rem;
@@ -315,18 +298,12 @@ img {
     transition: all .5;
 }
 
-.character-four:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
 .wrapper-fizz {
     
     width: 17.5vw;
     height: 21.5vh;
 
-    background: url(_images/Fizz.jpg);
+    background: url(../images/Fizz.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: .2rem;
@@ -393,18 +370,12 @@ img {
     transition: all .5;
 }
 
-.character-five:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
 .wrapper-heim {
     
     width: 17.5vw;
     height: 21.5vh;
 
-    background: url(_images/Heimerdinger.jpg);
+    background: url(../images/Heimerdinger.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: .2rem;
@@ -471,18 +442,12 @@ img {
     transition: all .5;
 }
 
-.character-six:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
 .wrapper-anivia {
     
     width: 17.5vw;
     height: 21.5vh;
 
-    background: url(_images/anivia.jpg);
+    background: url(../images/anivia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: .2rem;
@@ -554,11 +519,11 @@ img {
     transition: all .5;
 }
 
-.wrapper-object:hover {
+/* .wrapper-object:hover {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-}
+} */
 
 .wrapper-object button {
     width: 17.5vw;
