@@ -1,15 +1,6 @@
 let selectedFirstCharacter;
 let selectedSecondCharacter;
 
-function init() {
-    const characters = document.querySelectorAll('.characters')
-
-    for (const character of characters) {
-        character.addEventListener('click',selecionaChar)
-    }
-    document.getElementById('atacar').addEventListener('click', calcularDano)
-}
-
 function selecionaChar (evento) {
     const charSelecionado = evento.target.parentElement;
 
