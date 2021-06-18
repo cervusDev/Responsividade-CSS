@@ -5,23 +5,25 @@ const cards = document.querySelectorAll('.hover-selected')
 let secondChatacter ;
 
 // Selecionar cada personagem
+
 for (const card of cards) {
     card.addEventListener("click", function() {
         const championsName = this.getAttribute('data-name')
 
-        if (!this.classList.contains('selector')) {
-            this.classList.add('selector')
+        let n = 0
+        while (n <= 2){
 
-        } else {
-            this.classList.remove('selector')
-
-            console.log(this.classList.remove('selector '))
-
-            const championsSelected = document.querySelectorAll('.selector')
-            
-            if (championsSelected >= 1) {
+            if (!this.classList.contains('selector')) {
+                this.classList.add('selector')
+    
+    
+            } else {
+                this.classList.remove('selector')
+    
+                const championsSelected = document.querySelectorAll('.selector')
             }
         }
+        
     })
 }
 
