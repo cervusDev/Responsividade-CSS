@@ -1,9 +1,12 @@
 // selecionar a div dos personagens 
 const cards = document.querySelectorAll('.hover-selected')
 
+// let firstChacarter;
+let secondChatacter ;
+
 // Selecionar cada personagem
 for (const card of cards) {
-    card.addEventListener("click", function(event) {
+    card.addEventListener("click", function() {
         const championsName = this.getAttribute('data-name')
 
         if (!this.classList.contains('selector')) {
@@ -12,7 +15,20 @@ for (const card of cards) {
         } else {
             this.classList.remove('selector')
 
+            console.log(this.classList.remove('selector '))
+
             const championsSelected = document.querySelectorAll('.selector')
+            
+            if (championsSelected >= 1) {
+            }
         }
     })
 }
+
+// calcular dano 
+
+// function calcularDano() {
+//     if (!hover-selected || !secondChatacter) {
+//         alert('Selecione o personagem e a arma para calcular o dano')
+//     }
+// }

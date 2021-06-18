@@ -24,13 +24,7 @@ function iniciar() {
 }
 
 function marcarElementoSelecionado(evento) {
-    const elementoSelecionado = evento.target.parentElement;
-
-    // Se o bloco clicado não possui a classe 'elemento', consideramos que não
-    // é um clique válido e encerramos a função, retornando algo vazio.
-    if (!elementoSelecionado.classList.contains('elemento')) {
-        return;
-    }
+  
 
     const idElementoSelecionado = elementoSelecionado.getAttribute('id');
 
@@ -59,9 +53,9 @@ function calcularDano() {
     let resultado = 'Dano: ' + danoTotal + '! ';
 
     if (danoTotal >= vidaPersonagem) {
-        resultado += 'Parabéns, você matou ' + personagemSelecionado;
+        resultado += 'Parabï¿½ns, vocï¿½ matou ' + personagemSelecionado;
     } else {
-        resultado += 'Putz, não foi dessa vez, tente novamente!';
+        resultado += 'Putz, nï¿½o foi dessa vez, tente novamente!';
     }
 
     document.getElementById('dano').innerHTML = resultado;
