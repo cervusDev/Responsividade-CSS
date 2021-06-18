@@ -1,16 +1,17 @@
 // get all characters 
 const cards = document.querySelectorAll('.hover-selected')
-const button = document.querySelector('button-selected')
+const buttons = document.querySelectorAll('button-selected')
 
 // selector for each character
-for (const card of cards) {
-card.addEventListener("click", markerChar)
-}
-
 for (const button of buttons) {
     button.addEventListener('click', markerButton)
 }
 
+for (const card of cards) {
+card.addEventListener("click", markerChar)
+}
+
+// select character
 function markerChar() {
     const championsName = this.getAttribute('data-name')
 
@@ -34,8 +35,17 @@ function markerChar() {
 }
 
 // select button 
+function markerButton() {
+    const buttonName = this.getAttribute('data-button')
 
-button.addEventListener('click')
+    if (!this.classList.contains('selector')) {
+        this.classList.add('selector')
+    } else {
+        this.classList.remove('selector')
+    }
+
+    const buttonSelected = document.querySelectorAll('.selector')
+}
 
 
 
