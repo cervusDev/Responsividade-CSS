@@ -12,11 +12,21 @@ body {
     opacity: .9;
 }
 
-img {
+/* img {
     max-width: 100%;
-}
+} */
 
 .selector {
+    -moz-transform: scale(1.13);
+    -webkit-transform: scale(1.13);
+    transform: scale(1.13);
+}
+
+.selector-props {
+    opacity: 1;
+}
+
+.selector-button {
     -moz-transform: scale(1.13);
     -webkit-transform: scale(1.13);
     transform: scale(1.13);
