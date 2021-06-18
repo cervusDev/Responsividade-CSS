@@ -526,12 +526,6 @@ img {
     transition: all .5;
 }
 
-/* .wrapper-object:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-} */
-
 .wrapper-object button {
     width: 17.5vw;
     height: 5rem;

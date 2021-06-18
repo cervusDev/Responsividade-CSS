@@ -1,36 +1,41 @@
-// selecionar a div dos personagens 
+// get all characters 
 const cards = document.querySelectorAll('.hover-selected')
+const button = document.querySelector('button-selected')
 
-// let firstChacarter;
-let secondChatacter ;
-
-// Selecionar cada personagem
-
+// selector for each character
 for (const card of cards) {
-    card.addEventListener("click", function() {
-        const championsName = this.getAttribute('data-name')
-
-        let n = 0
-        while (n <= 2){
-
-            if (!this.classList.contains('selector')) {
-                this.classList.add('selector')
-    
-    
-            } else {
-                this.classList.remove('selector')
-    
-                const championsSelected = document.querySelectorAll('.selector')
-            }
-        }
-        
-    })
+card.addEventListener("click", markerChar)
 }
 
-// calcular dano 
+for (const button of buttons) {
+    button.addEventListener('click', markerButton)
+}
 
-// function calcularDano() {
-//     if (!hover-selected || !secondChatacter) {
-//         alert('Selecione o personagem e a arma para calcular o dano')
-//     }
-// }
+function markerChar() {
+    const championsName = this.getAttribute('data-name')
+
+        if (!this.classList.contains('selector')) {
+            this.classList.add('selector')
+
+        } else {
+            this.classList.remove('selector')
+        }
+
+        const championsSelected = document.querySelectorAll('.selector')
+        
+        
+        // selecionar apenas dois personagens
+        if (championsSelected.length >=3) {
+            window.alert('só é possível escolher 2 personagens por rodada')
+            this.classList.remove('selector')
+
+            console.log(championsSelected)
+        }
+}
+
+// select button 
+
+button.addEventListener('click')
+
+
+
