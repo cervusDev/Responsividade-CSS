@@ -12,10 +12,6 @@ body {
     opacity: .9;
 }
 
-/* img {
-    max-width: 100%;
-} */
-
 .selector {
     -moz-transform: scale(1.13);
     -webkit-transform: scale(1.13);
@@ -548,9 +544,10 @@ body {
 
 .wrapper-object button p {
     color: whitesmoke;
-    font-family: 'Roboto';
-    font-style: italic;
+    font-family: 'Lato';
     font-size: 2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
 
 }
 
