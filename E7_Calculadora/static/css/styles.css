@@ -12,7 +12,13 @@ body {
     opacity: .9;
 }
 
-.selector {
+.first-selector {
+    -moz-transform: scale(1.13);
+    -webkit-transform: scale(1.13);
+    transform: scale(1.13);
+}
+
+.second-selector {
     -moz-transform: scale(1.13);
     -webkit-transform: scale(1.13);
     transform: scale(1.13);

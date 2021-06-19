@@ -1,49 +1,76 @@
-// get all characters 
-const cards = document.querySelectorAll('.hover-selected')
-const buttons = document.getElementById('button-selected')
-const props = document.querySelectorAll('.card-info')
+const firstAttack = {
+    'Ahri': 13,
+    'Braum': 16,
+    'Aurelion': 19,
+};
 
-// for (const prop of props) {
-//     prop.addEventListener('click', markerProps)
-// }
+const secondAttack = {
+    'Fizz': 8,
+    'Heim': 8,
+    'Anivia': 8,
+};
 
-for (const card of cards) {
-card.addEventListener("click", markerChampion)
+// get first row characters 
+const firstCards = document.querySelectorAll('.first-selected')
+
+//get second row characters
+const secondCards = document.querySelectorAll('.second-selected')
+
+//get button
+const button = document.getElementById('button-selected')
+
+// get button to calc
+const buttonCalc = document.getElementById('attack')
+
+let firstChampion;
+let secondChampion;
+
+for (const card of firstCards) {
+card.addEventListener("click", markerFirstChampion)
 }
 
-buttons.addEventListener('click', markerButton)
+for (const card of secondCards) {
+    card.addEventListener("click",markerSecondChampion)
+}
 
-// select character
-function markerChampion() {
-    const champions = this.getAttribute('data-name')
+button.addEventListener('click', markerButton)
+buttonCalc.addEventListener('click', calculator)
+
+// select first character
+function markerFirstChampion() {
+    const first = this.getAttribute('data-first')
     
-    if (!this.classList.contains('selector')) {
-        this.classList.add('selector')
+    if (!this.classList.contains('first-selector')) {
+        this.classList.add('first-selector')
+        this.classList.add('all-selector')
     } else {
-        this.classList.remove('selector')
+        this.classList.remove('first-selector')
+        this.classList.remove('all-selector')
     }
 
+    firstChampion = first
+    console.log(firstChampion)
 }
 
-//                  Fracassei violentamente
+// select second character
+function markerSecondChampion() {
+    const second = this.getAttribute('data-second')
+    
+    if (!this.classList.contains('second-selector')) {
+        this.classList.add('second-selector')
+        this.classList.add('all-selector')
+    } else {
+        this.classList.remove('second-selector')
+        this.classList.remove('all-selector')
+    }
 
-// function markerProps() {
-//     const championsProps = this.getAttribute('data-info')
+    secondChampion = second
+    console.log(secondChampion)
+}
 
-//         if (!this.classList.contains('selector-props')) {
-//             this.classList.add('selector-props')
-//             console.log(championsProps)
-//         } else {
-
-//             this.classList.remove('selector-props')
-//             console.log(championsProps)
-//         }
-
-// }
-
-// select button 
+// select button
 function markerButton() {
-    const buttonName = this.getAttribute('data-button')
+    const button = this.getAttribute('data-button')
 
     if (!this.classList.contains('selector-button')) {
         this.classList.add('selector-button')
@@ -51,17 +78,50 @@ function markerButton() {
         this.classList.remove('selector-button')
     }
 
-    const championsSelected = document.querySelectorAll('.selector')
+    const firstAndSecondchampionsSelected = document.querySelectorAll('.all-selector')
 
-    if (championsSelected.length >= 3) {
-        const buttons = document.getElementById('button-selected')
+    if (firstAndSecondchampionsSelected.length >= 3) {
+        const button = document.getElementById('button-selected')
 
-        buttons.innerHTML = `<button id = 'atacar' type="submit">
+        button.innerHTML = `<button id = 'atacar' type="submit">
         <p>Negado</p>
         </button>`
 
+    } else {
+
+        button.innerHTML = `<button id = 'atacar' type="submit">
+        <p>Atacar</p>
+        </button>`
+
     }
-        
 }
 
+// Calculator Damage
 
+function calculator() {
+
+    if (!firstChampion || !secondChampion) {
+        alert('selecione um campeão')
+        return;
+    }
+    
+    const min = Math.ceil(1)
+    const max = Math.floor(10)
+
+    const diceDamage = Math.floor(Math.random() * (max - min + 1)) + min
+
+    const damageSecond = secondAttack[secondChampion]
+
+    const allDamage = diceDamage + damageSecond
+    const championLife = firstAttack[firstChampion]
+    
+    let resultado = `Dano: ${allDamage}!`
+
+    if (allDamage >= championLife) {
+        resultado += `${secondChampion} foi o campeão`
+        console.log(resultado)
+    } else {
+        resultado += `${firstChampion} foi o campeão`
+        console.log(resultado)
+    }
+}
