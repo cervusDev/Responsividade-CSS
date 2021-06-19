@@ -70,6 +70,28 @@ body {
     font-size: 3em;
 }
 
+.card-info {
+
+    font-family: 'Roboto';
+    font-size: 1.3em;
+    color: whitesmoke;
+
+    opacity: 0;
+    transition: all 1s ;
+
+}
+
+.card-info:hover{
+    opacity: 1;
+}
+
+.card-info p {
+
+    padding: 2em;
+    text-shadow: 2px 2px 2px black;
+    font-weight: 500;
+}
+
 .flex {
     display: flex;
     justify-content:space-evenly;
@@ -129,28 +151,6 @@ body {
     padding: .5em;
 }
 
-.card-info-ahri {
-
-    font-family: 'Roboto';
-    font-size: 1.3em;
-    color: whitesmoke;
-
-    opacity: 0;
-    transition: all 1s ;
-
-}
-
-.card-info-ahri:hover{
-    opacity: 1;
-}
-
-.card-info-ahri p {
-
-    padding: 2em;
-    text-shadow: 2px 2px 2px black;
-    font-weight: 500;
-}
-
 .character-two {
     width: 17.5vw;
     height: 47.5vh;
@@ -201,27 +201,6 @@ body {
     font-size: 2em;
 
     padding: .5em;
-}
-
-.card-info-braum {
-
-    font-family: 'Roboto';
-    font-size: 1.3em;
-    color: whitesmoke;
-
-    opacity: 0;
-    transition: all 1s;
-}
-
-.card-info-braum:hover {
-    opacity: 1;
-}
-
-.card-info-braum p {
-
-    padding: 2em;
-    text-shadow: 2px 2px 2px black;
-    font-weight: 500;
 }
 
 .character-three {
@@ -276,27 +255,6 @@ body {
     padding: .5em;
 }
 
-.card-info-aurelion {
-
-    font-family: 'Roboto';
-    font-size: 1.3em;
-    color: whitesmoke;
-
-    opacity: 0;
-    transition: all 1s;
-}
-
-.card-info-aurelion:hover {
-    opacity: 1;
-}
-
-.card-info-aurelion p {
-
-    padding: 1.2em;
-    text-shadow: 2px 2px 2px black;
-    font-weight: 500;
-}
-
 .character-four  {
     width: 17.5vw;
     height: 47.5vh;
@@ -346,28 +304,6 @@ body {
     font-size: 2em;
 
     padding: .5em;
-}
-
-.card-info-fizz {
-
-    font-family: 'Roboto';
-    font-size: 1.3em;
-    color: whitesmoke;
-
-    opacity: 0;
-    transition: all 1s;
-
-}
-
-.card-info-fizz:hover {
-    opacity: 1;
-}
-
-.card-info-fizz p {
-
-    padding: 2em;
-    text-shadow: 2px 2px 2px black;
-    font-weight: 500;
 }
 
 .character-five  {
@@ -422,27 +358,6 @@ body {
     padding: .5em;
 }
 
-.card-info-heim {
-
-    font-family: 'Roboto';
-    font-size: 1.3em;
-    color: whitesmoke;
-
-    opacity: 0;
-    transition: all 1s;
-
-}
-
-.card-info-heim:hover {
-    opacity: 1;
-}
-
-.card-info-heim p {
-
-    padding: 1.7em;
-    text-shadow: 2px 2px 2px black;
-    font-weight: 500;
-}
 
 .character-six  {
     width: 17.5vw;
@@ -494,29 +409,7 @@ body {
 
     padding: .5em;
 }
-
-.card-info-anivia {
-
-    font-family: 'Roboto';
-    font-size: 1.3em;
-    color: whitesmoke;
-
-    opacity: 0;
-    transition: all 1s;
-
-}
-
-.card-info-anivia:hover {
-    opacity: 1;
-}
-
-.card-info-anivia p {
-
-    padding: 1.2em;
-    text-shadow: 2px 2px 2px black;
-    font-weight: 500;
-}
-
+    
 .button-props {
     padding: 4em;
 }

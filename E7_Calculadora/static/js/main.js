@@ -116,7 +116,7 @@ function calculator() {
     const championLife = firstAttack[firstChampion]
     
     let resultado = `Dano: ${allDamage}!`
-
+    // criar o html
     if (allDamage >= championLife) {
         resultado += `${secondChampion} foi o campeão`
         console.log(resultado)
