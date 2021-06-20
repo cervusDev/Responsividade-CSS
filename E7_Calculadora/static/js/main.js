@@ -10,31 +10,35 @@ const secondAttack = {
     'Anivia': 8,
 };
 
-// get first row characters 
-const firstCards = document.querySelectorAll('.first-selected')
-
-//get second row characters
-const secondCards = document.querySelectorAll('.second-selected')
-
-//get button
-const button = document.getElementById('button-selected')
-
-// get button to calc
-const buttonCalc = document.getElementById('attack')
-
 let firstChampion;
 let secondChampion;
 
-for (const card of firstCards) {
-card.addEventListener("click", markerFirstChampion)
-}
+function init() {
+    const firstCards = document.querySelectorAll('.first-selected')
 
-for (const card of secondCards) {
-    card.addEventListener("click",markerSecondChampion)
-}
+    //get second row characters
+    const secondCards = document.querySelectorAll('.second-selected')
 
-button.addEventListener('click', markerButton)
-buttonCalc.addEventListener('click', calculator)
+    //get button
+    const button = document.getElementById('button-selected')
+
+    // get button to calc
+    const buttonCalc = document.getElementById('attack')
+
+    for (const card of firstCards) {
+        card.addEventListener("click", markerFirstChampion)
+        }
+        
+        for (const card of secondCards) {
+            card.addEventListener("click",markerSecondChampion)
+        }
+        
+    button.addEventListener('click', markerButton)
+    buttonCalc.addEventListener('click', calculator)
+
+
+
+}
 
 // select first character
 function markerFirstChampion() {
