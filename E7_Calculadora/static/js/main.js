@@ -129,7 +129,6 @@ function calculator() {
         </button>`
         // resultado += `${secondChampion} foi o campeão`
         // console.log(resultado)
-        return;
     } else {
 
         button.innerHTML = `<button id = 'atacar' type="submit">
