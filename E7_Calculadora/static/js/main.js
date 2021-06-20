@@ -22,6 +22,9 @@ const button = document.getElementById('button-selected')
 // get button to calc
 const buttonCalc = document.getElementById('attack')
 
+// get props
+// const props = document.querySelectorAll('.data-info')
+
 let firstChampion;
 let secondChampion;
 
@@ -32,6 +35,10 @@ card.addEventListener("click", markerFirstChampion)
 for (const card of secondCards) {
     card.addEventListener("click",markerSecondChampion)
 }
+
+// for (const prop of props) {
+//     prop.addEventListener('click', markerProps)
+// }
 
 button.addEventListener('click', markerButton)
 buttonCalc.addEventListener('click', calculator)
@@ -95,6 +102,19 @@ function markerButton() {
 
     }
 }
+
+// fixar texto
+
+// function markerProps() {
+//     const button = document.querySelectorAll('.card-info')
+
+
+//     if (!this.classList.contains('select-props')) {
+//         this.setAttribute('selector-props')
+//     } else {
+//         this.classList.remove('selector-props')
+//     }
+// }
 
 // Calculator Damage
 
