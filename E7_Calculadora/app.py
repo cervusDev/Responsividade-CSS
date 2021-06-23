@@ -5,8 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
 
-    herois = [ {'nome': 'Ahri' }, {'nome': 'Braum'}, {'nome': 'AurelionSol'},
-  {'nome': 'Fizz'}, {'nome': 'Heimerdinger'}, {'nome': 'Anivia'}] 
+    herois = [ {'nome': 'Ahri' }, {'nome': 'Braum'}, {'nome': 'AurelionSol'}] 
   
     caminhoImagem = 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/'
 

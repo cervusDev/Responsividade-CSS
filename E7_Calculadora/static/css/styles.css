@@ -3,12 +3,12 @@
     margin-top: 15%;
 }
 
-.wrapper-ahri img {
+.wrapper-ahri {
     
     width: 16.9vw;
     height: 21.5vh;
 
-    /* background: url(../images/ahri.jpg); */
+    background: url(../images/ahri.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: .2rem;
@@ -42,7 +42,7 @@
     margin-top: 15%;
 }
 
-.wrapper-braum img {
+.wrapper-braum {
     
     width: 17.5vw;
     height: 21.5vh;
