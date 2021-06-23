@@ -4,3 +4,15 @@
   box-sizing: border-box;
 }
 
+html {
+  --gray-ligth: #e5eaf1;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background: url(assets/bg.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}

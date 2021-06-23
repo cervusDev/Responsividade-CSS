@@ -8,7 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="../static/css/fonts.css">
+    <link rel="stylesheet" href="../static/css/global.css">
     <link rel="stylesheet" href="../static/css/styles.css">
+
     <script type="text/javascript" src="../static/js/main.js" defer></script>
     
     <title>Calculadora de Dano</title>
@@ -22,10 +24,11 @@
                 escolha seu 
                 <p>campeão</p>
             </div>
+            {% for heroi in herois %}
             <section class="flex">
-                <div class="character-one first-selected first" data-first="Ahri">
+                <div class="one character first-selected first" data-first="Ahri">
                     <div class="wrapper-ahri">
-                        <!-- imagem no css  -->
+                        <img src="{{caminhoImagem}}{{heroi.nome}}_0.jpg" alt="">
                     </div>
                     <div class="ahri-name">
                         <p>ahri</p>
@@ -38,9 +41,9 @@
                     </div>
                 </div>
 
-                <div class="character-two first-selected first" data-first="Braum">
+                <div class="two character first-selected first" data-first="Braum">
                     <div class="wrapper-braum">
-                        <!-- imagem no css  -->
+                        <img src="{{caminhoImagem}}{{heroi.nome}}_1.jpg" alt="">
                     </div>
                     <div class="braum-name">
                         <p>braum</p>
@@ -53,7 +56,7 @@
                     </div>
                 </div>
 
-                <div class="character-three first-selected first" data-first="Aurelion Sol">
+                <div class="three character first-selected first" data-first="Aurelion Sol">
                     <div class="wrapper-aurelion">
                         <!-- imagem no css  -->
                     </div>
@@ -70,7 +73,7 @@
             
             <section class="flex">
 
-                <div class="character-four second-selected second" data-second="Fizz">
+                <div class="four character second-selected second" data-second="Fizz">
                     <div class="wrapper-fizz ">
                         <!-- imagem no css  -->
                     </div>
@@ -83,7 +86,7 @@
                     </div>
                 </div>
 
-                <div class="character-five second-selected second" data-second="Heim">
+                <div class="five character second-selected second" data-second="Heim">
                     <div class="wrapper-heim">
                         <!-- imagem no css  -->
                     </div>
@@ -97,7 +100,7 @@
                     </div>
                 </div>
 
-                <div class="character-six second-selected second" data-second="Anivia">
+                <div class="six character second-selected second" data-second="Anivia">
                     <div class="wrapper-anivia">
                         <!-- imagem no css  -->
                     </div>
@@ -111,7 +114,7 @@
                     </div>
                 </div>
             </section> 
-
+            {% endfor %}
             <section class="button-props">
                 <div class="wrapper-object" id="button-selected" data-button="calcular">
                     <button id = 'attack' type="submit">

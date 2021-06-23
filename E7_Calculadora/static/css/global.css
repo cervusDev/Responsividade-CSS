@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.25%;
+
+  background: url(../images/bg.jpg), no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.first-selector {
+  -moz-transform: scale(1.13);
+  -webkit-transform: scale(1.13);
+  transform: scale(1.13);
+}
+
+.second-selector {
+  -moz-transform: scale(1.13);
+  -webkit-transform: scale(1.13);
+  transform: scale(1.13);
+}
+
+.selector-props {
+  font-family: 'Roboto';
+  font-size: 1.3em;
+  color: whitesmoke;
+
+  opacity: 0;
+  transition: all 1s ;
+  
+}
+
+.selector-button {
+  -moz-transform: scale(1.13);
+  -webkit-transform: scale(1.13);
+  transform: scale(1.13);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  /* evita a barra de rolagem */
+  /* overflow: hidden; */
+  /* permite que elemenetos sejam postos sobre o bg */
+  /* também é usado para utilizar as propriedades top, bottom, left,rigth */
+  position: relative;
+}
+
+.banner {
+  /* só funciona dentro de um objeto com position relative */
+  position: absolute;
+  top: 5%;
+  left: 45%;
+
+  color: whitesmoke;
+  font-family: 'Roboto';
+  font-style: italic;
+  font-size: 2em;
+  text-transform: uppercase;
+
+}
+
+.banner p {
+
+  position: relative;
+  padding: .1em   ;
+  right: 25%;
+  
+  font-family: 'Vollkorn+SC';
+  color: whitesmoke;
+
+  font-size: 3em;
+}
+
+.card-info {
+
+  font-family: 'Roboto';
+  font-size: 1.3em;
+  color: whitesmoke;
+
+  opacity: 0;
+  transition: all 1s ;
+
+}
+
+.card-info:hover{
+  opacity: 1;
+}
+
+.card-info p {
+
+  padding: 2em;
+  text-shadow: 2px 2px 2px black;
+  font-weight: 500;
+}
+
+.flex {
+  display: flex;
+  justify-content:space-evenly;
+
+  padding: 4rem;
+}
+
+.character {
+  height: 47.5vh;
+
+  background: rgba(0, 0, 0, .5);
+  border-radius: .5rem;
+
+  align-items: center;
+
+  position: relative;
+  
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  transition: all .5;
+  cursor: pointer;
+}

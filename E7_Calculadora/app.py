@@ -4,9 +4,16 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
+
+    herois = [ {'nome': 'Ahri' }, {'nome': 'Braum'}, {'nome': 'AurelionSol'},
+  {'nome': 'Fizz'}, {'nome': 'Heimerdinger'}, {'nome': 'Anivia'}] 
+  
+    caminhoImagem = 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/'
+
     return render_template(
     'main.html',
-    'main.js',
+    caminhoImagem = caminhoImagem,
+    herois = herois,
     )
 
 if __name__ == '__main__':
