@@ -5,14 +5,14 @@ app = Flask(__name__)
 @app.route('/')
 def home():
 
-  herois = [ {'nome': 'Ahri' }, {'nome': 'Braum'}, {'nome': 'AurelionSol'},
-  {'nome': 'Fizz'}, {'nome': 'Heimerdinger'}, {'nome': 'Anivia'}] 
+  herois = [ {'nome': 'Ahri', 'texto': 'Com uma conexão inata com o poder latente de Runeterra, Ahri é uma vastaya capaz de transformar magia em orbes de pura energia' }, {'nome': 'Braum', 'texto':'Com uma conexão inata com o poder latente de Runeterra, Ahri é uma vastaya capaz de transformar magia em orbes de pura energia'}, {'nome': 'AurelionSol', 'texto': 'Aurelion Sol costumava agraciar a vasta imensidão vazia dos cosmos com maravilhas celestiais concebidas por ele mesmo'},
+  {'nome': 'Fizz', 'texto': 'Fizz é um yordle anfíbio que vive entre os recifes que rodeiam Águas de Sentina. Irrita-lo não é uma boa ideia.'}, {'nome': 'Heimerdinger', 'text': 'Professor Cecil B. Heimerdinger é um dos inventores mais inovadores e estimados que Piltover já conheceu.'}, {'nome': 'Anivia', 'texto': 'Anivia é um espírito alado e benevolente que suporta infinitos ciclos de vida, morte e renascimento para proteger Freljord.'}]
 
   caminhoImagem = 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/'
 
   return render_template(
     'main.html',
-    campeoes = herois,
+    herois = herois,
     caminhoImagem = caminhoImagem,
   )
 if __name__ == '__main__':
