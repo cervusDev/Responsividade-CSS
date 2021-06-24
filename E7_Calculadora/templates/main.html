@@ -24,20 +24,17 @@
                 escolha seu 
                 <p>campeão</p>
             </div>
-            {% for heroi in herois %}
             <section class="flex">
+            {% for heroi in herois %}
                 <div class="one character first-selected first" data-first="Ahri">
                     <div class="wrapper-ahri">
                         <!-- imagem no css  -->
                     </div>
                     <div class="ahri-name">
-                        <p>ahri</p>
+                        <p>{{heroi.nome}}</p>
                     </div>
                     <div class="card-info" data-info="ahri" >
-                        <p>Com uma conexão inata com o poder
-                        latente de Runeterra, Ahri é uma vastaya
-                        capaz de transformar magia em orbes de
-                        pura energia</p>
+                        <p>{{heroi.texto}}</p>
                     </div>
                 </div>
 
@@ -46,7 +43,7 @@
                         <!-- imagem no css  -->
                     </div>
                     <div class="braum-name">
-                        <p>braum</p>
+                        <p>{{heroi.nome}}</p>
                     </div>
                     <div class="card-info" data-info="braum">
                         <p>Com uma conexão inata com o poder
@@ -69,6 +66,7 @@
                         por ele mesmo.</p>
                     </div>
                 </div>
+            {% endfor %}
             </section>
             
             <section class="flex">
@@ -114,7 +112,6 @@
                     </div>
                 </div>
             </section> 
-            {% endfor %}
             <section class="button-props">
                 <div class="wrapper-object" id="button-selected" data-button="calcular">
                     <button id = 'attack' type="submit">
