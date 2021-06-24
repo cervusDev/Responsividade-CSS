@@ -12,7 +12,5 @@ html {
 body {
   display: flex;
   height: 100vh;
-  background: url(assets/bg.jpg) no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  
 }
