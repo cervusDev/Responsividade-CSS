@@ -6,6 +6,8 @@
 .ahri img {
     width: 17vw;
     height: 21.5vh;
+
+    border-radius: .3rem;
 }
 
 .name .ahri p {
@@ -21,6 +23,8 @@
 .braum img {
     width: 17.5vw;
     height: 21.5vh;
+
+    border-radius: .3rem;
 }
 
 .name .braum p {
@@ -34,9 +38,10 @@
 }
 
 .aurelion img {
-
     width: 17.5vw;
     height: 21.5vh;
+
+    border-radius: .3rem;
 }
 
 .four  {
@@ -48,6 +53,8 @@
 .fizz img {
     width: 17.5vw;
     height: 21.5vh;
+
+    border-radius: .3rem;
 }
 
 .name .fizz p {
@@ -64,6 +71,8 @@
 .heim img {
     width: 17.5vw;
     height: 21.5vh;
+
+    border-radius: .3rem;
 }
 
 .name .heim p {
@@ -82,6 +91,8 @@
 .anivia img {
     width: 17.5vw;
     height: 21.5vh;
+
+    border-radius: .3rem;
 }
 
 .name .anivia p {

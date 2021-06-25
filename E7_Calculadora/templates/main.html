@@ -28,93 +28,95 @@
                 <p>campeão</p>
             </div>
             <section class="flex">
-                <div class="one character first-selected first" data-first="Ahri">
+                
+                <div class="one character first-selected" data-first="Ahri">
+                    {% for heroi in ahri %}
                     <div class="wrapper ahri">
                         <img src="../static/images/ahri.jpg" alt="ahri">
                     </div>
+
                     <div class="name ahri">
-                        <p>Ahri</p>
+                        <p>{{heroi.nome}}</p>
                     </div>
+
                     <div class="card-info" data-info="ahri" >
-                        <p>Com uma conexão inata com o poder
-                        latente de Runeterra, Ahri é uma vastaya
-                        capaz de transformar magia em orbes de
-                        pura energia</p>
+                        <p>{{heroi.historia}}</p>
                     </div>
+                    {% endfor %}
                 </div>
 
-                <div class="two character first-selected first" data-first="Braum">
+                <div class="two character first-selected" data-first="Braum">
+                    {% for heroi in braum %}
                     <div class="wrapper braum">
                         <img src="../static/images/braum.jpg" alt="">
                     </div>
                     <div class="name braum">
-                        <p>Braum</p>
+                        <p>{{heroi.nome}}</p>
                     </div>
                     <div class="card-info" data-info="braum">
-                        <p>Com uma conexão inata com o poder
-                        latente de Runeterra, Ahri é uma vastaya
-                        capaz de transformar magia em orbes de
-                        pura energia</p>
+                        <p>{{heroi.historia}}</p>
                     </div>
+                    {% endfor %}
                 </div>
 
-                <div class="three character first-selected first" data-first="Aurelion Sol">
+                <div class="three character first-selected" data-first="Aurelion Sol">
+                    {% for heroi in aurelion %}
                     <div class="wrapper aurelion">
                         <img src="../static/images/Aurelion.jpg" alt="Aurelion">
                     </div>
                     <div class="name aurelion">
-                        <p>aurelion Sol</p>
+                        <p>{{heroi.nome}}</p>
                     </div>
                     <div class="card-info" data-info="aurelion">
-                        <p>Aurelion Sol costumava agraciar a vasta imensidão
-                        vazia dos cosmos com maravilhas celestiais concebidas
-                        por ele mesmo.</p>
+                        <p>{{heroi.historia}}</p>
                     </div>
+                    {% endfor %}
                 </div>
 
             </section>
             
             <section class="flex">
 
-                <div class="four character second-selected second" data-second="Fizz">
+                <div class="four character second-selected" data-second="Fizz">
+                    {% for heroi in fizz %}
                     <div class="wrapper fizz">
                         <img src="../static/images/Fizz.jpg" alt="Fizz">
                     </div>
                     <div class="name fizz">
-                        <p>fizz</p>
+                        <p>{{heroi.nome}}</p>
                     </div>
                     <div class="card-info" data-info="Fizz">
-                        <p>Fizz é um yordle anfíbio que vive entre os recifes que
-                        rodeiam Águas de Sentina. Irrita-lo não é uma boa ideia.</p>
+                        <p>{{heroi.historia}}</p>
                     </div>
+                    {% endfor %}
                 </div>
 
-                <div class="five character second-selected second" data-second="Heim">
+                <div class="five character second-selected" data-second="Heim">
+                    {% for heroi in heim %}
                     <div class="wrapper heim">
                       <img src="../static/images/Heimerdinger.jpg" alt="Heim">
                     </div>
                     <div class="name heim">
-                        <p>heimerdinger</p>
+                        <p>{{heroi.nome}}</p>
                     </div>
                     <div class="card-info" data-info = "Heim">
-                        <p>
-                        Professor Cecil B. Heimerdinger é um dos inventores 
-                        mais inovadores e estimados que Piltover já conheceu.</p>
+                        <p>{{heroi.historia}}</p>
                     </div>
+                    {% endfor %}
                 </div>
 
-                <div class="six character second-selected second" data-second="Anivia">
+                <div class="six character second-selected" data-second="Anivia">
+                    {% for heroi in anivia %}
                     <div class="wrapper anivia">
                         <img src="../static/images/anivia.jpg" alt="Anivia">
                     </div>
                     <div class="name anivia">
-                        <p>anivia</p>
+                        <p>{{heroi.nome}}</p>
                     </div>
                     <div class="card-info" data-info="anivia">
-                        <p>Anivia é um espírito alado e benevolente que suporta 
-                        infinitos ciclos de vida, morte e renascimento para 
-                        proteger Freljord.</p>
+                        <p>{{heroi.historia}}</p>
                     </div>
+                    {% endfor %}
                 </div>
             </section> 
             <section class="button-props">
