@@ -3,38 +3,14 @@
     margin-top: 15%;
 }
 
-.wrapper-ahri {
-    
-    width: 16.9vw;
+.ahri img {
+    width: 17vw;
     height: 21.5vh;
-
-    background: url(../images/ahri.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: .2rem;
 }
 
-.ahri-name {
+.name .ahri p {
     width:16.9vw ;
     height: 2.5rem;
-    
-    text-align: center;
-    color: whitesmoke;
-
-    text-transform: capitalize;
-    background-color: rgba(0, 0, 0, .7);
-
-    position: relative;
-    
-}
-
-.ahri-name p {
-
-    font-family: 'Vollkorn+SC';
-    font-style: italic;
-    font-size: 2em;
-
-    padding: .5em;
 }
 
 .two {
@@ -42,38 +18,14 @@
     margin-top: 15%;
 }
 
-.wrapper-braum {
-    
+.braum img {
     width: 17.5vw;
     height: 21.5vh;
-
-    background: url(../images/braum.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: .2rem;
 }
 
-.braum-name {
+.name .braum p {
     width:17.5vw ;
     height: 2.5rem;
-    
-    text-align: center;
-    color: whitesmoke;
-
-    text-transform: capitalize;
-    background-color: rgba(0, 0, 0, .7);
-
-    position: relative;
-    
-}
-
-.braum-name p {
-
-    font-family: 'Vollkorn+SC';
-    font-style: italic;
-    font-size: 2em;
-
-    padding: .5em;
 }
 
 .three {
@@ -81,38 +33,10 @@
     margin-top: 15%;
 }
 
-.wrapper-aurelion {
-    
+.aurelion img {
+
     width: 17.5vw;
     height: 21.5vh;
-
-    background: url(../images/Aurelion.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: .2rem;
-}
-
-.aurelion-name {
-    width:17.5vw ;
-    height: 2.5rem;
-    
-    text-align: center;
-    color: whitesmoke;
-
-    text-transform: capitalize;
-    background-color: rgba(0, 0, 0, .7);
-
-    position: relative;
-    
-}
-
-.aurelion-name p {
-
-    font-family: 'Vollkorn+SC';
-    font-style: italic;
-    font-size: 2em;
-
-    padding: .5em;
 }
 
 .four  {
@@ -121,38 +45,14 @@
     position: relative;
 }
 
-.wrapper-fizz {
-    
+.fizz img {
     width: 17.5vw;
     height: 21.5vh;
-
-    background: url(../images/Fizz.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: .2rem;
 }
 
-.fizz-name {
+.name .fizz p {
     width:17.5vw ;
     height: 2.5rem;
-    
-    text-align: center;
-    color: whitesmoke;
-
-    text-transform: capitalize;
-    background-color: rgba(0, 0, 0, .7);
-
-    position: relative;
-    
-}
-
-.fizz-name p {
-
-    font-family: 'Vollkorn+SC';
-    font-style: italic;
-    font-size: 2em;
-
-    padding: .5em;
 }
 
 .five  {
@@ -161,39 +61,14 @@
     position: relative;
 }
 
-
-.wrapper-heim {
-    
+.heim img {
     width: 17.5vw;
     height: 21.5vh;
-
-    background: url(../images/Heimerdinger.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: .2rem;
 }
 
-.heim-name {
+.name .heim p {
     width:17.5vw ;
     height: 2.5rem;
-    
-    text-align: center;
-    color: whitesmoke;
-
-    text-transform: capitalize;
-    background-color: rgba(0, 0, 0, .7);
-
-    position: relative;
-    
-}
-
-.heim-name p {
-
-    font-family: 'Vollkorn+SC';
-    font-style: italic;
-    font-size: 2em;
-
-    padding: .5em;
 }
 
 
@@ -203,92 +78,13 @@
     position: relative;
 }
 
-.wrapper-anivia {
-    
+
+.anivia img {
     width: 17.5vw;
     height: 21.5vh;
-
-    background: url(../images/anivia.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: .2rem;
 }
 
-.anivia-name {
+.name .anivia p {
     width:17.5vw ;
     height: 2.5rem;
-    
-    text-align: center;
-    color: whitesmoke;
-
-    text-transform: capitalize;
-    background-color: rgba(0, 0, 0, .7);
-
-    position: relative;
-    
-}
-
-.anivia-name p {
-
-    font-family: 'Vollkorn+SC';
-    font-style: italic;
-    font-size: 2em;
-
-    padding: .5em;
-}
-    
-.button-props {
-    padding: 4em;
-}
-
-.wrapper-object {
-    width: 17.5vw;
-    height: 5rem;
-
-    text-align: center;
-    position: relative;
-    left: 41%;
-
-    background: rgba(0, 0, 0, .9);
-    border-radius: .5rem;
-    border-radius: 1rem;
-
-    -moz-transition: all .5s;
-    -webkit-transition: all .5s;
-    transition: all .5;
-}
-
-.wrapper-object button {
-    width: 17.5vw;
-    height: 5rem;
-
-    background: rgba(0, 0, 0, .7);
-    border: none;
-    border-radius: 1rem;
-    cursor: pointer;
-}
-
-.wrapper-object button p {
-    color: whitesmoke;
-    font-family: 'Lato';
-    font-size: 2rem;
-    font-weight: bolder;
-    text-transform: uppercase;
-
-}
-
-@media(max-width: 775px) {
-    html {
-        font-size: 80%;
-    }
-}
-
-@media(max-width: 770px) {
-    html {
-        font-size: 60%;
-    }
-
-    .banner {
-        margin-left: -2em;
-    }
 }

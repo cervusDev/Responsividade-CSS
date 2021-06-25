@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="../static/css/fonts.css">
     <link rel="stylesheet" href="../static/css/global.css">
     <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/button.css">
+    <link rel="stylesheet" href="../static/css/media.css">
+    <link rel="stylesheet" href="../static/css/js.css">
 
     <script type="text/javascript" src="../static/js/main.js" defer></script>
     
@@ -25,25 +28,27 @@
                 <p>campeão</p>
             </div>
             <section class="flex">
-            {% for heroi in herois %}
                 <div class="one character first-selected first" data-first="Ahri">
-                    <div class="wrapper-ahri">
-                        <!-- imagem no css  -->
+                    <div class="wrapper ahri">
+                        <img src="../static/images/ahri.jpg" alt="ahri">
                     </div>
-                    <div class="ahri-name">
-                        <p>{{heroi.nome}}</p>
+                    <div class="name ahri">
+                        <p>Ahri</p>
                     </div>
                     <div class="card-info" data-info="ahri" >
-                        <p>{{heroi.texto}}</p>
+                        <p>Com uma conexão inata com o poder
+                        latente de Runeterra, Ahri é uma vastaya
+                        capaz de transformar magia em orbes de
+                        pura energia</p>
                     </div>
                 </div>
 
                 <div class="two character first-selected first" data-first="Braum">
-                    <div class="wrapper-braum">
-                        <!-- imagem no css  -->
+                    <div class="wrapper braum">
+                        <img src="../static/images/braum.jpg" alt="">
                     </div>
-                    <div class="braum-name">
-                        <p>{{heroi.nome}}</p>
+                    <div class="name braum">
+                        <p>Braum</p>
                     </div>
                     <div class="card-info" data-info="braum">
                         <p>Com uma conexão inata com o poder
@@ -54,10 +59,10 @@
                 </div>
 
                 <div class="three character first-selected first" data-first="Aurelion Sol">
-                    <div class="wrapper-aurelion">
-                        <!-- imagem no css  -->
+                    <div class="wrapper aurelion">
+                        <img src="../static/images/Aurelion.jpg" alt="Aurelion">
                     </div>
-                    <div class="aurelion-name">
+                    <div class="name aurelion">
                         <p>aurelion Sol</p>
                     </div>
                     <div class="card-info" data-info="aurelion">
@@ -66,16 +71,16 @@
                         por ele mesmo.</p>
                     </div>
                 </div>
-            {% endfor %}
+
             </section>
             
             <section class="flex">
 
                 <div class="four character second-selected second" data-second="Fizz">
-                    <div class="wrapper-fizz ">
-                        <!-- imagem no css  -->
+                    <div class="wrapper fizz">
+                        <img src="../static/images/Fizz.jpg" alt="Fizz">
                     </div>
-                    <div class="fizz-name">
+                    <div class="name fizz">
                         <p>fizz</p>
                     </div>
                     <div class="card-info" data-info="Fizz">
@@ -85,10 +90,10 @@
                 </div>
 
                 <div class="five character second-selected second" data-second="Heim">
-                    <div class="wrapper-heim">
-                        <!-- imagem no css  -->
+                    <div class="wrapper heim">
+                      <img src="../static/images/Heimerdinger.jpg" alt="Heim">
                     </div>
-                    <div class="heim-name">
+                    <div class="name heim">
                         <p>heimerdinger</p>
                     </div>
                     <div class="card-info" data-info = "Heim">
@@ -99,10 +104,10 @@
                 </div>
 
                 <div class="six character second-selected second" data-second="Anivia">
-                    <div class="wrapper-anivia">
-                        <!-- imagem no css  -->
+                    <div class="wrapper anivia">
+                        <img src="../static/images/anivia.jpg" alt="Anivia">
                     </div>
-                    <div class="anivia-name">
+                    <div class="name anivia">
                         <p>anivia</p>
                     </div>
                     <div class="card-info" data-info="anivia">
