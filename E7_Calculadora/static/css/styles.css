@@ -1,3 +1,5 @@
+/* @import  */
+
 .one {
     width: 17vw;  
     margin-top: 15%;
@@ -11,47 +13,47 @@
 }
 
 .name .ahri p {
-    width:16.9vw ;
+    width:16.9vwcl;
     height: 2.5rem;
 }
 
 .two {
-    width: 17.5vw;
+    width: 10rem;
     margin-top: 15%;
 }
 
 .braum img {
-    width: 17.5vw;
+    width: 10rem;
     height: 21.5vh;
 
     border-radius: .3rem;
 }
 
 .name .braum p {
-    width:17.5vw ;
+    width: 10rem;
     height: 2.5rem;
 }
 
 .three {
-    width: 17.5vw;
+    width: 10rem;
     margin-top: 15%;
 }
 
 .aurelion img {
-    width: 17.5vw;
+    width: 10rem;
     height: 21.5vh;
 
     border-radius: .3rem;
 }
 
 .four  {
-    width: 17.5vw;
+    width: 10rem;
     height: 47.5vh;
     position: relative;
 }
 
 .fizz img {
-    width: 17.5vw;
+    width: 10rem;
     height: 21.5vh;
 
     border-radius: .3rem;
@@ -63,39 +65,39 @@
 }
 
 .five  {
-    width: 17.5vw;
+    width: 10rem;
     height: 47.5vh;
     position: relative;
 }
 
 .heim img {
-    width: 17.5vw;
+    width: 10rem;
     height: 21.5vh;
 
     border-radius: .3rem;
 }
 
 .name .heim p {
-    width:17.5vw ;
+    width: 10rem;
     height: 2.5rem;
 }
 
 
 .six  {
-    width: 17.5vw;
+    width: 10rem;
     height: 47.5vh;
     position: relative;
 }
 
 
 .anivia img {
-    width: 17.5vw;
+    width: 10rem;
     height: 21.5vh;
 
     border-radius: .3rem;
 }
 
 .name .anivia p {
-    width:17.5vw ;
+    width: 10rem;
     height: 2.5rem;
 }
